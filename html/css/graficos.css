@@ -1,0 +1,78 @@
+html{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6em;
+    ;
+}
+
+footer {
+    color: #333;
+    font-size: 1.2rem;
+}
+div {
+    margin: 40px auto; /* 40 px para bottom e auto nas laterais para centralizar na tela*/
+}
+
+/*Cria um circulo*/
+
+#grafico-01 {
+    background-color: brown;
+    width: 400px;
+    height: 400px;
+    overflow: hidden; /*esconde o conteúdo que ultarapssa a área da div*/
+    border-radius: 50%; /* Serve para adicionar cantos arredondados na div*/
+    /*overflow: scroll; se a área da div ultarapassa o conteúdo cria-se um scroll*/
+    
+   
+}
+
+#grafico-01 img {
+    width: 100%;
+    height: auto; 
+}
+
+
+/* Criar triângulo*/
+#grafico-02 {
+    /*width: 200px;
+    height: 200px;*/
+    background: tomato;
+    border-style: solid;
+    border-width: 60px 0 60px 120px;
+    border-color: transparent transparent transparent blue;
+    width: 60px;
+}
+
+#imagem-vetorial {
+    width: 200px;
+    height: ;
+}
+
+
+/*Filtros*/
+/*Filtros servem para aplicar efeitos especiais nas imagens*/ 
+
+#grafico-01 {
+    filter: drop-shadow(8px 8px 10px #333); /*sombra projetada. Parametro 1 - eixo horizontal. 
+    Parametro 2 - eixo vertical. Parametro 3 - Expansão da sombra. Parametro 4 - cor*/
+}
+
+.filtro {
+    filter: grayscale(100%);/*Escala de cionza*/
+    filter: blur(5px); /*desfoque*/
+    filter: brightness(200%); /*brilho, em 100% a img fica no estado original*/
+    filter: invert(100%); /*Inverte as cores da img*/
+    filter: opacity(50%); /*opacidade, 100% é o estado normal*/
+    filter: saturate(200%) sepia(80%) ; /*saturação. A combinação de filtros ocorre a partir da separação por espaços*/
+}   
+
+
+
+.filtro:hover {
+    filter: grayscale(0%); /* a imagem perde o valor cinza qunado passa o mouse por cima*/
+    
+    
+}

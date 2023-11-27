@@ -1,0 +1,65 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: gray;
+    overflow: overlay; /*Trava a rolagem horizontal mas permanece a vetical*/
+}
+
+h1, h2, p {
+    margin-bottom: 20px;
+}
+
+div {
+    padding: 20px 0;
+    margin: 0;
+}
+
+.width-100 {
+    width: auto;
+    width: 100vw; /* vw(viewport width)A mesma coisa que width = 100%*/
+    background-color: aqua;
+
+    padding: 20px 0;
+    height: 400px;
+    
+}
+
+nav {
+    background-color: tomato;
+    width: 20%;
+    float: left;
+    display: table;
+    display: block;
+    height: 100%;
+}
+
+article {
+    background-color: yellow;
+    width: 80%;
+    float: left;
+    /*box-sizing: content-box; */
+    /* box-sizing altera a caixa de box model(margin, padding...)*/
+    height: 100%;
+    box-sizing: border-box;/*Considera o padding e a borda*/
+}
+
+.background {
+    background-color: coral;
+    background-image: url(../imagens/pattern.png);
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 50vh;
+}
+
+div img {
+    width: 100%;
+}

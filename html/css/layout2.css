@@ -1,0 +1,133 @@
+
+*{
+	box-sizing: border-box;
+}
+
+html {
+	margin:0px;
+	padding:0px;
+	font-size: 62.5%; /*10px*/
+}
+
+body {
+	background-color: white;
+
+}
+
+h1 {
+	font-size: 2rem;
+
+}
+
+h2 {
+	font-size: 1.8rem;
+
+}
+
+header{
+	background-color: #333;
+	padding: 30px;
+	text-align: center;
+	font-size: 35px;
+	color: white;
+}
+
+nav{
+	background-color: tomato;
+	float: left; /*muda a regra de quebra de linha,ou seja,
+	mesmo ocupando 30% o nav continua a quebrar a linha*/
+	width: 30%;
+	padding: 30px;
+	
+}
+
+nav ul {
+	list-style-type: circle;
+	padding: 10px;
+}
+
+article {
+	background-color: yellow;
+	float: left;
+	padding: 20px;
+	width: 70%;
+	font-size: 2rem;
+}
+
+article ul{
+	padding: 2rem;
+}
+
+section::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+footer{
+	background-color: #eee;
+	padding: 10px;
+	text-align: center;
+	color: blueviolet;
+}
+
+@media (min-width:200px) and (max-width: 500px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+.coluna{
+	display: block;
+	width: 50%;
+	float: left;
+	padding: 5px;
+	background: #eee;
+	border: 1px solid #333;
+}
+
+iframe {
+	width: 100%;
+}
+
+
+/*Algo especifico*/
+
+@media (min-width: 768px) {
+	body {
+		background-color: teal;
+	}
+}
+	
+/*Tablet*/
+@media(max-width: 768px) {
+	nav {
+		width: 30%;
+	}
+
+	article {
+		width: 70%;
+	}
+
+	.coluna {
+		width: 50%;
+		min-width: unset;
+		/* Ocuparão 100% da tela até 425px*/
+
+	}
+} 
+
+
+/*Smartphone*/
+
+@media(max-width: 425px) {
+	nav,
+	article 
+	.coluna {
+		width: 100%;
+		min-width: 320px;
+		/* Ocuparão 100% da tela até 425px*/
+} 
+

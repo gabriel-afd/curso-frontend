@@ -1,0 +1,67 @@
+table{
+	border: 1px solid;
+	background: #ffffff;
+	width: 100%;
+	border-collapse: collapse;
+	
+}
+
+
+table tr {
+	border: 1px solid #757575;
+}
+
+table tbody tr:nth-child(even) {  /* nth-child() define o número da linha em que se aplica uma regra especifica
+even para linhas pares e odd para linhas impares*/
+	background-color: #00AAFF;
+}
+
+table tbody tr:hover{
+	background-color: rgba(0, 0, 185, 0.5);
+}
+
+
+table th,
+table td{
+	border: 1px solid #757575;
+	padding: 1rem;
+	border: 1px;
+
+	height: 1rem;
+	vertical-align: bottom;
+
+}
+
+
+table tr td:first-child { /*Primeiro filho td(coluna) de cada linha*/
+	text-align: left;
+	font-weight: bold;
+
+}
+
+table th {
+	background-color: #234589;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 1.8rem;
+	text-align: left;
+}
+
+
+.table-container{
+	padding: 2rem 1rem;
+}
+
+.table-container h3{
+	font-size: 1.8rem;
+	font-style: normal;
+	margin-bottom: 1rem;
+}
+
+.table-container tfoot td {
+	font-weight: bold;
+}
+
+.table-container tfoot {
+	background: #EEEEEE;
+}

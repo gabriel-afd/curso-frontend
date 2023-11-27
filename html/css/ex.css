@@ -1,0 +1,189 @@
+/*Importar CSS de TAbelas*/
+@import url('tabelas2.css');
+
+
+/* PARTE 1
+
+	Herança
+
+	1. Sobreposição / Sobrescreve
+	2. Aplica a último estilo definido
+	3. Prioriza estilo específicas (com seletores mais próximos)
+	4. Se aplica a todas as propriedades
+
+ */
+
+
+
+html{
+	font-family: sans-serif;
+	color: #333333;
+}
+
+p{
+	color: #fff;
+	font-size: 2rem;
+}
+
+header {
+	color: white;
+	font-size: 4rem;
+}
+
+header p{
+	color: gold;
+	font-size: 2rem;
+}
+
+header h2 {
+	color: antiquewhite;
+}
+
+
+/* PARTE 2
+
+	Combinadores 
+	
+	(espaço) seletor descendente 
+	(>) combinador de seletores filhos
+	(+) combinador de elementos irmãos adjacentes / que vem logo na sequencia
+	(~) combinador de elementos irmãos geral / após elemento de referência
+
+	
+*/
+
+header h2 {
+	font-weight: 100; /* Aplica-se para todos h2 no header*/
+
+}
+
+header > h2 {
+	font-weight: 600; /* Aplica-se somente para o filho imediato, próx h2* no caso */
+	padding: 5px;
+}
+
+h2 + p {
+	background: #FF0; /* Aplica-se somente para elementos adjacentes*/
+	color: #333;
+}
+
+div ~ p {
+	text-transform: uppercase; /* Neste caso aplica-se para TODOS os irmãos p abaixo da tag dic*/
+} 
+
+a{
+	color: #555555;
+	text-decoration: none; /*Padrão é com linha(underline)*/
+	font-size: 2rem;
+	display: block;
+	width: 100%;
+}
+
+
+a:visited {
+	background: #f00; /*Marca os links que já foram visitados*/
+}
+
+a:active {
+	color: orange;
+	background: yellow;
+}
+
+a:hover {
+	color:seagreen; /*Altera a cor do link ao passar o mouse por cima*/
+	background: white;
+}
+
+/* PARTE 3
+
+	Tipografia
+*/
+
+html{
+	font-family: Times New Roman;
+}
+
+
+h1,h2,h3 {
+	font-family: 'Pacifico', cursive;
+	font-weight: bold;
+}
+
+
+p{
+	font-weight: normal;
+	font-size: 1.4rem;
+}
+
+li{
+	letter-spacing: 0.1rem;
+	font-family: sans-serif;
+	line-height: 1.5;
+	padding-left: 10px;
+}
+
+h3 {
+	font-size: 3rem;
+	padding: 1rem;
+	/*font: 2rem/2 sans-serif bold;Forma alternativa de definir a fonte:tamanho, familia, peso*/
+}
+
+
+/* PARTE 4 
+
+	Cores
+
+	Color- Para textos
+	Background - Todo o fundo
+
+	RGB A(opacidade,0.5 meio transparente)
+
+*/
+
+body{
+	background: url('../images/matrix.png') center top no-repeat #000000;
+	/* No ´repeat para imagem n repetir, center top para alinhas no centro e topo e #00000 para o restante ficar preto*/
+}
+
+section {
+	background: rgba(255, 255, 255, 0.75); /* Em "background" pode utilizar imagem e valor
+	em background-colo somente valor*/
+}
+
+p {
+	color: #034589;
+}
+
+header,
+footer {
+	background-color: #034589;
+}
+
+footer p{
+	color: rgb(255, 255, 255, 1.0);
+}
+
+.navegacao {
+	background-color: rgba(0, 0, 0, .5);
+
+}
+
+.navegacao li a {
+	color: white;
+	font-size: 1.4rem;
+}
+
+.navegacao li a:hover{
+	background-color:rgba(150, 150, 200, 0.5);
+	color: green;
+/* Somente um item com link que estiver dentro de uma lista que tem a 
+classe navegavao*/
+}
+
+
+/* PARTE 5 
+
+	TABELAS
+*/
+
+
