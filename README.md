@@ -15,7 +15,7 @@ Liguagem de programação para web
  - Controle de versão
  - Quem alterou
  - O quê alterou
- - Quando alterou
+ - Quando alteroudssdsds
  - Todos os arquivos
  - Evolução contínuasds
  Arquivo A  | Versão 1 | Versão 2
@@ -47,7 +47,7 @@ Fluxo de trabalho no Git
 ### Branchs
 são ramificações / versões paralelas
 
-- main / master (vai para produção, quando o projeto é publicado)
+- main / master (vai para produção, quando o projeto é publicado>
 - develop 
 - DOD Definition of Done: critérios de aceite
 - versionamento 1.0.0
